@@ -1,3 +1,7 @@
 language: objective-c
-script: make
+before_script:
+    - brew update && brew upgrade xctool
+xcode_project: podtest.xcodeproj
+xcode_scheme: podtestTests
+xcode_sdk: iphonesimulator
 
